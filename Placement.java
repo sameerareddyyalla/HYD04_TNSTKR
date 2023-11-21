@@ -42,7 +42,7 @@ public class Placement {
 	public String getQualification() {
 		return qualification;
 	}
-	public void setQualification(String Qualification) {
+	public void setQualification(String qualification) {
 		this.qualification = qualification;
 	}
 }
