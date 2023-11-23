@@ -1,18 +1,32 @@
-package com.tns.controller;
-/* class created by Sameera Reddy 
- * Date Created 21-11-2023
+package com.tns.entity;
+
+/* class created by Sameera Reddy Yalla
+
+ * Date created 21-11-2023
  */
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+@Entity
+@Table(name="placement")
 public class Placement {
+	@Id
 	long id;
 	String name;
 	College college;
 	LocalDate date;
 	String qualification;
 	int year;
-	public Placement() {
+	public Placement(long id,String name,College college,LocalDate date,String qualification,int year) {
+		this.id = id;
+		this.name = name;
+		this.college = college;
+		this.date = date;
+		this.qualification = qualification;
+		this.year = year;
 		
 	}
 	public long getId() {
